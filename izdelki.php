@@ -1,199 +1,103 @@
-<!DOCTYPE html>
-<html lang="sl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Izdelki</title>
+<?php require_once 'header.php'; ?>
+<?php require_once 'nav.php'; ?>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<main class="izdelki-wrapper container mt-5">
 
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="Popa_transparent.png" alt="Popa logo" class="logo-img">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Odpri meni">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="menu">
-      <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="domov.html">Domov</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html">O nas</a></li>
-                <li class="nav-item"><a class="nav-link" href="izdelki.html">Izdelki</a></li>
-                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-                <li class="nav-item"><a class="nav-link" href="narocilo.html">Naročilo</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-<main class="izdelki-wrapper container">
-
-  <section class="title-section">
+  <section class="title-section mb-4">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <h1>Izdelki</h1>
+        <h1 class="fw-bold">Izdelki</h1>
       </div>
-
       <div class="col-md-6">
-        <form class="search-box ms-md-auto">
-          <input type="text" class="form-control" placeholder="iskanje">
-          <button type="submit" aria-label="Išči" title="Išči">
-            <span aria-hidden="true">⌕</span>
-          </button>
+        <form class="search-box ms-md-auto d-flex">
+          <input type="text" class="form-control me-2" placeholder="Iskanje...">
+          <button type="submit" class="btn btn-outline-primary" aria-label="Išči" title="Išči">⌕</button>
         </form>
       </div>
     </div>
   </section>
 
-  <section class="product-section">
+  <section class="product-section mb-5">
     <h2>Pohištvo</h2>
-
-    <div class="row align-items-center izdelki-row">
+    <div class="row align-items-center izdelki-row g-3">
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="stolica.png" alt="Stolica">
-        </div>
+        <div class="product-card text-center"><img src="stolica.png" class="img-fluid" alt="Stolica"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="miza.png" alt="Miza">
-        </div>
+        <div class="product-card text-center"><img src="miza.png" class="img-fluid" alt="Miza"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="bijela polica.png" alt="Polica">
-        </div>
+        <div class="product-card text-center"><img src="bijela_polica.png" class="img-fluid" alt="Polica"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="polica.png" alt="Omarica">
-        </div>
+        <div class="product-card text-center"><img src="bijela_polica.png" class="img-fluid" alt="Omarica"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="policabijela2.png" alt="Miza z omaro">
-        </div>
+        <div class="product-card text-center"><img src="bijela_polica2.png" class="img-fluid" alt="Miza z omaro"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="policabijela3.png" alt="Visoka polica">
-        </div>
+        <div class="product-card text-center"><img src="bijela_polica3.png" class="img-fluid" alt="Visoka polica"></div>
       </div>
-
-      <div class="col-12 text-end">
-        <button class="btn order-btn">Naroči</button>
+      <div class="col-12 text-end mt-3">
+        <a href="narocilo.php" class="btn btn-primary">Naroči</a>
       </div>
     </div>
   </section>
 
-  <section class="product-section">
+  <section class="product-section mb-5">
     <h2>Naprave</h2>
-
-    <div class="row align-items-center izdelki-row">
+    <div class="row align-items-center izdelki-row g-3">
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="printer.jpg" alt="Tiskalnik">
-        </div>
+        <div class="product-card text-center"><img src="printer.jpg" class="img-fluid" alt="Tiskalnik"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="monitor.png" alt="Monitor">
-        </div>
+        <div class="product-card text-center"><img src="monitor.png" class="img-fluid" alt="Monitor"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="boja.jpg" alt="Toner">
-        </div>
+        <div class="product-card text-center"><img src="boja.jpg" class="img-fluid" alt="Toner"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="laptop.png" alt="Prenosnik">
-        </div>
+        <div class="product-card text-center"><img src="laptop.png" class="img-fluid" alt="Prenosnik"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="tipkovnica.png" alt="Tipkovnica">
-        </div>
+        <div class="product-card text-center"><img src="tipkovnica.png" class="img-fluid" alt="Tipkovnica"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="miska.png" alt="Miška">
-        </div>
+        <div class="product-card text-center"><img src="miska.png" class="img-fluid" alt="Miška"></div>
       </div>
-
-      <div class="col-12 text-end">
-        <button class="btn order-btn">Naroči</button>
+      <div class="col-12 text-end mt-3">
+        <a href="narocilo.php" class="btn btn-primary">Naroči</a>
       </div>
     </div>
   </section>
 
-  <section class="product-section">
+  <section class="product-section mb-5">
     <h2>Material</h2>
-
-    <div class="row align-items-center izdelki-row">
+    <div class="row align-items-center izdelki-row g-3">
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="stickynotes.png" alt="Lističi">
-        </div>
+        <div class="product-card text-center"><img src="stickynotes.png" class="img-fluid" alt="Lističi"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="registrator.png" alt="Registrator">
-        </div>
+        <div class="product-card text-center"><img src="registrator.png" class="img-fluid" alt="Registrator"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="papir.png" alt="Papir">
-        </div>
+        <div class="product-card text-center"><img src="papir.png" class="img-fluid" alt="Papir"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="zvezek.png" alt="Zvezek">
-        </div>
+        <div class="product-card text-center"><img src="zvezek.png" class="img-fluid" alt="Zvezek"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="kulice.png" alt="Kemični svinčniki">
-        </div>
+        <div class="product-card text-center"><img src="kulice.png" class="img-fluid" alt="Kemični svinčniki"></div>
       </div>
-
       <div class="col-6 col-md-2">
-        <div class="product-card">
-          <img src="bojice.png" alt="Barvice">
-        </div>
+        <div class="product-card text-center"><img src="bojice.png" class="img-fluid" alt="Barvice"></div>
       </div>
-
-      <div class="col-12 text-end">
-        <button class="btn order-btn">Naroči</button>
+      <div class="col-12 text-end mt-3">
+        <a href="narocilo.php" class="btn btn-primary">Naroči</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="footer-space"></footer>
-
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php require_once 'footer.php'; ?>

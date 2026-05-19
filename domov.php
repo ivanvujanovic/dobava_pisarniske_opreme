@@ -1,18 +1,18 @@
-<?php include 'header.php'; ?>
-<?php include 'nav.php'; ?>
+<?php require_once 'header.php'; ?>
+<?php require_once 'nav.php'; ?>
 
-<section class="hero container py-5">
+<main class="hero container py-5">
     <div class="row align-items-center">
         <div class="col-md-6">
-            <img src="domovslika.png" class="img-fluid rounded" alt="Pisarniška oprema">
+            <img src="popa.png" class="img-fluid rounded" alt="Pisarniška oprema">
         </div>
         <div class="col-md-6">
             <h1 class="fw-bold">DOBAVA PISARNIŠKE OPREME</h1>
             <p>Dobavljamo kakovostno pisarniško opremo za podjetja, šole in organizacije. Enostavno naročanje, hitra dostava in zanesljiva storitev na enem mestu.</p>
-            <a href="izdelki.html" class="btn btn-primary">Poglej izdelke</a>
+            <a href="izdelki.php" class="btn btn-primary">Poglej izdelke</a>
         </div>
     </div>
-</section>
+</main>
 
 <section class="features container py-5">
     <div class="row text-center">
@@ -31,4 +31,4 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php require_once 'footer.php'; ?>
